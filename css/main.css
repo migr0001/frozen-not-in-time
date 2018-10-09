@@ -1,0 +1,79 @@
+html {
+  background: repeating-linear-gradient(-45deg, #d4fdff, #c9fcff 20px, #d4fdff 20px, #c9fcff 20px, #d4fdff 20px);
+  font-family: "Fredoka One", sans-serif;
+  border-top: 8px solid #b3fbff;
+}
+
+main {
+  position: relative;
+}
+
+h1 {
+  color: #990073;
+  transform: rotate(-10deg);
+  position: absolute;
+  left: 10%;
+  top: 50px;
+}
+
+p {
+  color: #c09;
+  max-width: 19em;
+  transform: rotate(-6deg);
+  position: absolute;
+  left: 10%;
+  top: 135px;
+}
+
+nav > a {
+  color: #c09;
+  text-decoration: none;
+}
+
+.btn {
+  position: absolute;
+  border: 3px solid #990073;
+  left: 10%;
+  top: 270px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.cone {
+  position: absolute;
+  left: 120%;
+  top: 250px;
+}
+
+.mint {
+  position: absolute;
+  top: 140px;
+  left: 120%;
+  z-index: -1;
+}
+
+.chocolate {
+  position: absolute;
+  top: 65px;
+  left: 121%;
+}
+
+.vanilla {
+  position: absolute;
+  top: 5px;
+  left: 120%;
+  z-index: 1;
+}
+
+.cherry {
+  position: absolute;
+  left: 120%;
+  top: .3px;
+  z-index: 1;
+}
+
+img {
+  width: 180px;
+}
