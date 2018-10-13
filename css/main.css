@@ -1,18 +1,24 @@
 html {
-  background: repeating-linear-gradient(-45deg, #d4fdff, #c9fcff 20px, #d4fdff 20px, #c9fcff 20px, #d4fdff 20px);
   font-family: "Fredoka One", sans-serif;
-  border-top: 8px solid #b3fbff;
 }
 
 main {
+  background: repeating-linear-gradient(-50deg, #d4fdff, #c9fcff 20px, #d4fdff 20px, #c9fcff 20px, #d4fdff 20px);
+  border-top: 8px solid #b3fbff;
+  border-bottom: 8px solid #b3fbff;
   position: relative;
+  height: 480px;
+}
+
+.content {
+  animation: cool-effects 1.5s linear;
 }
 
 h1 {
   color: #990073;
   transform: rotate(-10deg);
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 50px;
   text-shadow: 0 9px rgba(180, 255, 244, .2);
 }
@@ -22,7 +28,7 @@ p {
   max-width: 19em;
   transform: rotate(-6deg);
   position: absolute;
-  left: 10%;
+  left: 7%;
   top: 135px;
   text-shadow: 0 9px rgba(180, 255, 244, .2);
 }
@@ -35,8 +41,16 @@ nav > a {
 .btn {
   position: absolute;
   border: 3px solid #990073;
-  left: 10%;
+  left: 7%;
   top: 270px;
+}
+
+.btn-ghost {
+  text-shadow: 0 9px rgba(180, 255, 244, .2);
+}
+
+.btn-ghost:hover {
+  border: 3px solid #990073;
 }
 
 .wrapper {
@@ -45,7 +59,7 @@ nav > a {
 
 .cone {
   position: absolute;
-  left: 95%;
+  left: 75%;
   top: 250px;
   animation: ice-cream .5s linear;
 }
@@ -53,32 +67,33 @@ nav > a {
 .mint {
   position: absolute;
   top: 140px;
-  left: 95%;
-  z-index: -1;
-  animation: ice-cream .8s linear;
+  left: 75%;
+  animation: ice-cream 1s linear;
 }
 
 .chocolate {
   position: absolute;
   top: 65px;
-  left: 96%;
-  animation: ice-cream 1.1s linear;
+  left: 76%;
+  z-index: 2;
+  animation: ice-cream 1.5s linear;
 }
 
 .vanilla {
   position: absolute;
   top: 5px;
-  left: 95%;
-  z-index: 1;
-  animation: ice-cream 1.4s linear;
+  left: 75%;
+  z-index: 3;
+  animation: ice-cream 2s linear;
 }
 
 .cherry {
   position: absolute;
-  left: 95%;
-  top: .3px;
-  z-index: 1;
-  animation: ice-cream 2s linear;
+  left: 75%;
+  top: -75px;
+  z-index: 4;
+  animation: ice-cream 2.5s linear;
+  animation-fill-mode: forwards;
 }
 
 img {
@@ -113,10 +128,6 @@ img {
     transform: translate(0);
   }
 
-}
-
-.content {
-  animation: cool-effects 2s linear;
 }
 
 @keyframes cool-effects {
