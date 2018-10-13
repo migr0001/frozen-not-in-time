@@ -14,6 +14,7 @@ h1 {
   position: absolute;
   left: 10%;
   top: 50px;
+  text-shadow: 0 9px rgba(180, 255, 244, .2);
 }
 
 p {
@@ -23,6 +24,7 @@ p {
   position: absolute;
   left: 10%;
   top: 135px;
+  text-shadow: 0 9px rgba(180, 255, 244, .2);
 }
 
 nav > a {
@@ -43,37 +45,94 @@ nav > a {
 
 .cone {
   position: absolute;
-  left: 120%;
+  left: 95%;
   top: 250px;
+  animation: ice-cream .5s linear;
 }
 
 .mint {
   position: absolute;
   top: 140px;
-  left: 120%;
+  left: 95%;
   z-index: -1;
+  animation: ice-cream .8s linear;
 }
 
 .chocolate {
   position: absolute;
   top: 65px;
-  left: 121%;
+  left: 96%;
+  animation: ice-cream 1.1s linear;
 }
 
 .vanilla {
   position: absolute;
   top: 5px;
-  left: 120%;
+  left: 95%;
   z-index: 1;
+  animation: ice-cream 1.4s linear;
 }
 
 .cherry {
   position: absolute;
-  left: 120%;
+  left: 95%;
   top: .3px;
   z-index: 1;
+  animation: ice-cream 2s linear;
 }
 
 img {
   width: 180px;
+}
+
+@keyframes ice-cream {
+
+  0%, 60%, 75%, 90%, 100% {
+    animation-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    transform: translate(0, -20px);
+  }
+
+  75% {
+    transform: translate(0, -5px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0);
+  }
+
+}
+
+.content {
+  animation: cool-effects 2s linear;
+}
+
+@keyframes cool-effects {
+
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+    filter: blur(7px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(7px);
+  }
+
 }
