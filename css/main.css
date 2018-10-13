@@ -12,6 +12,7 @@ main {
 
 .content {
   animation: cool-effects 1.5s linear;
+  top: 15px;
 }
 
 h1 {
@@ -29,7 +30,7 @@ p {
   transform: rotate(-6deg);
   position: absolute;
   left: 7%;
-  top: 135px;
+  top: 140px;
   text-shadow: 0 9px rgba(180, 255, 244, .2);
 }
 
@@ -47,6 +48,7 @@ nav > a {
 
 .btn-ghost {
   text-shadow: 0 9px rgba(180, 255, 244, .2);
+  width: 8em;
 }
 
 .btn-ghost:hover {
